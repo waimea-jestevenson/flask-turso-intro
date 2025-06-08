@@ -8,13 +8,10 @@
 
 
 {% block content %}
-
-    <h1>Thing Details</h1>
-
-    <article>
-
-        <P>THING INFO HERE!!!</P>
-
-    </article>
-
+<h1>Thing Details</h1>
+  <article>
+  <h3>{{ thing.name }}</h3>
+  <p> Price: ${{ thing.price }}</p>
+  </article>
+<a role="button" href="/">Back To List</a>
 {% endblock %}
